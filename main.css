@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222222;
+    font-family: sans-serif;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    height: auto; /*  essential for responsive design because it allows elements to adapt to different content sizes and screen resolutions. */
+}
+
+p {
+    font-size: 14px;
+}
+
+
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.child {
+    text-align: center;
+}
+
+.name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.address {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: hsl(75, 94%, 57%);
+}
+
+.role {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links {
+    display: block;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none; /* removes the underline from the links */
+    color: #fff;
+    background-color: #333;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #555;
+}
+
+/* this is a pseudoclass . it is a keyword that can be added to a selector to specify a particular state of the selected elements*/
+.links:hover {
+    background-color: hsl(123, 94%, 57%);
+    color: #000000;
+}
